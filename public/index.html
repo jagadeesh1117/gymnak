@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GYMNAK — Social Gym Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <div class="auth-screen">
+      <div class="auth-panel">
+        <div class="auth-box auth-login">
+          <span class="eyebrow">Welcome back</span>
+          <h2>Login to GYMNK</h2>
+          <p class="auth-note">Use <strong>admin@gymnak.com / admin123</strong> to test admin access.</p>
+          <form id="loginForm">
+            <label for="loginEmail">Email</label>
+            <input id="loginEmail" type="email" required autocomplete="username" placeholder="you@example.com" />
+            <label for="loginPassword">Password</label>
+            <input id="loginPassword" type="password" required autocomplete="current-password" placeholder="********" />
+            <button type="submit">Login</button>
+            <p id="loginMessage" class="auth-message"></p>
+          </form>
+          <div class="auth-switch">
+            <span>New to GYMNK?</span>
+            <button id="showSignup" class="link-button" type="button">Create account</button>
+          </div>
+        </div>
+
+        <div class="auth-box auth-signup hidden" id="signupBox">
+          <span class="eyebrow">Join the crew</span>
+          <h2>Create an account</h2>
+          <form id="signupForm">
+            <label for="signupName">Name</label>
+            <input id="signupName" type="text" required placeholder="Your name" />
+            <label for="signupEmail">Email</label>
+            <input id="signupEmail" type="email" required placeholder="you@example.com" />
+            <label for="signupPassword">Password</label>
+            <input id="signupPassword" type="password" required placeholder="********" />
+            <button type="submit">Sign up</button>
+            <p id="signupMessage" class="auth-message"></p>
+          </form>
+          <div class="auth-switch">
+            <span>Already have an account?</span>
+            <button id="showLogin" class="link-button" type="button">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-screen hidden">
+      <header>
+        <div class="header-brand">
+          <span class="brand-mark">G</span>
+          <div>
+            <h1>GYMNAK</h1>
+            <p>Social powerlifting, cardio tracking, and leaderboard rewards for gym friends.</p>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <div class="user-picker">
+            <label>Signed in as</label>
+            <div id="currentUserLabel" class="user-chip"></div>
+          </div>
+          <div class="dropdown">
+            <button id="actionToggle" class="secondary-button">Quick actions</button>
+            <div id="actionMenu" class="dropdown-menu hidden" role="menu">
+              <button type="button" class="dropdown-link" data-page="overview">Overview</button>
+              <button type="button" class="dropdown-link" data-page="log">Log workout</button>
+              <button type="button" class="dropdown-link" data-page="friends">Friends</button>
+              <button type="button" class="dropdown-link" data-page="leaderboards">Leaderboards</button>
+              <button type="button" class="dropdown-link" data-action="refresh">Refresh stats</button>
+              <button type="button" class="dropdown-link" data-action="logout">Logout</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="hero-banner">
+        <div class="hero-copy">
+          <span class="eyebrow">Train smarter with your crew</span>
+          <h2>Welcome to GYMNK — your gym community for tracking wins, goals, and rewards.</h2>
+          <p>Discover competitive dashboards, leaderboard momentum, and workout achievements in one vibrant hub.</p>
+        </div>
+
+        <div class="hero-graphic">
+          <div class="graphic-card">
+            <div class="graphic-pill">Daily streak</div>
+            <div class="glow-ring"></div>
+            <div class="metric-label">72% active</div>
+          </div>
+          <div class="dashboard-graphic">
+            <div class="chart-column" style="height: 78%"></div>
+            <div class="chart-column highlight" style="height: 92%"></div>
+            <div class="chart-column" style="height: 64%"></div>
+            <div class="chart-column" style="height: 82%"></div>
+            <div class="chart-column" style="height: 55%"></div>
+          </div>
+        </div>
+      </section>
+
+      <main>
+
+    <main>
+      <section class="page page-overview" data-page="overview">
+        <div class="panel panel-grid">
+          <div class="card stats-card">
+            <div class="panel-header">
+              <h2>Performance summary</h2>
+              <span class="status-tag">Live dashboard</span>
+            </div>
+            <div id="userStats"></div>
+            <div class="progress-card">
+              <div class="progress-header">
+                <div>
+                  <h3>Weekly goal progress</h3>
+                  <p id="goalProgressLabel">Keep pushing to hit your target.</p>
+                </div>
+                <div class="status-tag" id="goalProgressTag">Goal: 100 pts</div>
+              </div>
+              <div class="progress-track"><div id="goalProgressBar" class="progress-fill"></div></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2>Recent activity</h2>
+            <div id="activityFeed" class="activity-list"></div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="card quick-access-card">
+            <div class="panel-header">
+              <h2>Quick access workouts</h2>
+              <span class="status-tag">Customizable</span>
+            </div>
+            <div id="quickAccessGrid" class="quick-grid"></div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="card">
+            <h2>My rewards</h2>
+            <div id="rewardList"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page page-log hidden" data-page="log">
+        <div class="panel panel-grid">
+          <div class="card">
+            <h2>Log a workout</h2>
+            <form id="workoutForm">
+              <label for="exerciseSelect">Exercise</label>
+              <select id="exerciseSelect"></select>
+              <div id="liftInputs" class="field-group hidden">
+                <label for="weightInput">Weight</label>
+                <input id="weightInput" type="number" min="0" step="1" placeholder="kg" />
+                <label for="repsInput">Reps</label>
+                <input id="repsInput" type="number" min="0" step="1" placeholder="reps" />
+              </div>
+              <div id="timeInputs" class="field-group hidden">
+                <label for="durationInput">Duration</label>
+                <input id="durationInput" type="number" min="0" step="1" placeholder="seconds or minutes" />
+              </div>
+              <button type="submit">Save workout</button>
+            </form>
+          </div>
+
+          <div class="card">
+            <h2>Goal dashboard</h2>
+            <p>Earn rewards by staying consistent and hitting exercise goals.</p>
+            <ul class="goal-list">
+              <li>First workout logged: Starter Badge</li>
+              <li>100 points in a week: Goal Setter badge</li>
+              <li>5 workouts logged: Consistency Champion</li>
+              <li>60 minutes of timed training: Time Master</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="page page-friends hidden" data-page="friends">
+        <div class="panel panel-grid">
+          <div class="card">
+            <h2>Friend manager</h2>
+            <form id="friendForm">
+              <label for="friendSelect">Add friend</label>
+              <select id="friendSelect"></select>
+              <button type="submit">Add friend</button>
+            </form>
+            <div id="friendList"></div>
+          </div>
+
+          <div class="card">
+            <h2>Suggested teammates</h2>
+            <div id="friendSuggestions"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page page-leaderboards hidden" data-page="leaderboards">
+        <div class="panel two-col">
+          <div class="card leaderboard-card">
+            <div class="leaderboard-header">
+              <h2>Friend leaderboard</h2>
+            </div>
+            <div id="friendLeaderboard"></div>
+          </div>
+
+          <div class="card leaderboard-card">
+            <div class="leaderboard-header">
+              <h2>Global leaderboard</h2>
+            </div>
+            <div id="globalLeaderboard"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

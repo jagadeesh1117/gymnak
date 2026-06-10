@@ -1,0 +1,238 @@
+{
+  "users": [
+    {
+      "id": "admin",
+      "name": "Admin",
+      "email": "admin@gymnak.com",
+      "password": "admin123",
+      "role": "admin",
+      "favoriteExercises": [
+        "bench",
+        "plank",
+        "jogging"
+      ],
+      "rewards": [],
+      "targetScore": 100,
+      "achievements": []
+    },
+    {
+      "id": "u1",
+      "name": "Alex",
+      "email": "alex@gymnak.com",
+      "password": "alex123",
+      "favoriteExercises": [
+        "bench",
+        "squat",
+        "plank"
+      ],
+      "rewards": [
+        {
+          "id": "starter",
+          "name": "Starter Badge",
+          "description": "First workout logged"
+        },
+        {
+          "id": "goal-setter",
+          "name": "Goal Setter",
+          "description": "Reached your weekly score goal"
+        },
+        {
+          "id": "global-2",
+          "name": "Global Contender",
+          "description": "Strong second-place performer this week"
+        }
+      ],
+      "targetScore": 100,
+      "achievements": []
+    },
+    {
+      "id": "u2",
+      "name": "Ria",
+      "email": "ria@gymnak.com",
+      "password": "ria123",
+      "favoriteExercises": [
+        "deadlift",
+        "skipping",
+        "shoulder"
+      ],
+      "rewards": [
+        {
+          "id": "starter",
+          "name": "Starter Badge",
+          "description": "First workout logged"
+        },
+        {
+          "id": "goal-setter",
+          "name": "Goal Setter",
+          "description": "Reached your weekly score goal"
+        },
+        {
+          "id": "global-1",
+          "name": "Global Weekly Champion",
+          "description": "Top performer across GYMNK this week"
+        },
+        {
+          "id": "local-leader",
+          "name": "Local Crew Leader",
+          "description": "Highest scoring athlete in your friend group this week"
+        }
+      ],
+      "targetScore": 100,
+      "achievements": []
+    },
+    {
+      "id": "u3",
+      "name": "Mia",
+      "email": "mia@gymnak.com",
+      "password": "mia123",
+      "favoriteExercises": [
+        "bicep",
+        "plank",
+        "jogging"
+      ],
+      "rewards": [],
+      "targetScore": 100,
+      "achievements": []
+    },
+    {
+      "id": "u4",
+      "name": "Leo",
+      "email": "leo@gymnak.com",
+      "password": "leo123",
+      "favoriteExercises": [
+        "squat",
+        "deadlift",
+        "skipping"
+      ],
+      "rewards": [],
+      "targetScore": 100,
+      "achievements": []
+    }
+  ],
+  "exercises": [
+    {
+      "id": "bench",
+      "name": "Bench Press",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "squat",
+      "name": "Squat",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "deadlift",
+      "name": "Deadlift",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "shoulder",
+      "name": "Shoulder Press",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "bicep",
+      "name": "Bicep Curl",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "plank",
+      "name": "Plank",
+      "kind": "time",
+      "unit": "sec"
+    },
+    {
+      "id": "skipping",
+      "name": "Skipping",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "jogging",
+      "name": "Jogging",
+      "kind": "time",
+      "unit": "min"
+    }
+  ],
+  "activities": [
+    {
+      "id": "1780012743037-ldof5s",
+      "userId": "u1",
+      "exerciseId": "bench",
+      "name": "Bench Press",
+      "kind": "lift",
+      "unit": "kg",
+      "weight": 40,
+      "reps": 15,
+      "score": 60,
+      "createdAt": "2026-05-28T23:59:03.037Z"
+    },
+    {
+      "id": "1780012836470-vxfgw1",
+      "userId": "u2",
+      "exerciseId": "deadlift",
+      "name": "Deadlift",
+      "kind": "lift",
+      "unit": "kg",
+      "weight": 50,
+      "reps": 15,
+      "score": 75,
+      "createdAt": "2026-05-29T00:00:36.470Z"
+    },
+    {
+      "id": "1780179648709-kwsff9",
+      "userId": "u2",
+      "exerciseId": "shoulder",
+      "name": "Shoulder Press",
+      "kind": "lift",
+      "unit": "kg",
+      "weight": 57,
+      "reps": 0,
+      "score": 0,
+      "createdAt": "2026-05-30T22:20:48.709Z"
+    },
+    {
+      "id": "1780179660285-iazcad",
+      "userId": "u2",
+      "exerciseId": "shoulder",
+      "name": "Shoulder Press",
+      "kind": "lift",
+      "unit": "kg",
+      "weight": 80,
+      "reps": 35,
+      "score": 280,
+      "createdAt": "2026-05-30T22:21:00.285Z"
+    }
+  ],
+  "friendships": [
+    {
+      "userId": "u1",
+      "friendId": "u2"
+    },
+    {
+      "userId": "u1",
+      "friendId": "u3"
+    },
+    {
+      "userId": "u2",
+      "friendId": "u4"
+    },
+    {
+      "userId": "u1",
+      "friendId": "u4"
+    },
+    {
+      "userId": "u2",
+      "friendId": "u1"
+    },
+    {
+      "userId": "u1",
+      "friendId": "admin"
+    }
+  ]
+}
