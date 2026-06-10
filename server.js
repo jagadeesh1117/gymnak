@@ -357,11 +357,13 @@ app.get('/api/leaderboard/friends/:userId', async (req, res) => {
   await db.write();
   const user = findUser(req.params.userId);
   if (!user) return res.status(404).json({ error: 'User not found' });
-  const friends = getFriends(user.id);
-  const friendData = friends.map(friend => {
-    const entries = getWeekActivities(friend.id);
-    const bonus = getUserBonusPoints(friend);
-    return formatLeaderboardItem(friend, entries, bonus);
+  const friends = getFriends(user.id) || [];
+  // include the user themself in their friends leaderboard
+  const group = [user, ...friends];
+  const friendData = group.map(member => {
+    const entries = getUserActivities(member.id);
+    const bonus = getUserBonusPoints(member);
+    return formatLeaderboardItem(member, entries, bonus);
   });
   res.json(friendData.sort((a, b) => b.scoreWithBonus - a.scoreWithBonus));
 });
