@@ -6,238 +6,797 @@
       "email": "admin@gymnak.com",
       "password": "admin123",
       "role": "admin",
-      "favoriteExercises": ["bench", "plank", "jogging"],
+      "favoriteExercises": [
+        "bench",
+        "plank",
+        "jogging"
+      ],
       "rewards": [],
       "targetScore": 100,
       "achievements": []
     },
     {
-      {
-        "users": [
-          {
-            "id": "admin",
-            "name": "Admin",
-            "email": "admin@gymnak.com",
-            "password": "admin123",
-            "role": "admin",
-            "favoriteExercises": ["bench", "plank", "jogging"],
-            "rewards": [],
-            "targetScore": 100,
-            "achievements": []
-          },
-          {
-            "id": "u1",
-            "name": "Alex",
-            "email": "alex@gymnak.com",
-            "password": "alex123",
-            "favoriteExercises": ["bench", "squat", "plank"],
-            "rewards": [
-              { "id": "starter", "name": "Starter Badge", "description": "First workout logged" },
-              { "id": "goal-setter", "name": "Goal Setter", "description": "Reached your weekly score goal" }
-            ],
-            "targetScore": 100,
-            "achievements": []
-          },
-          {
-            "id": "u2",
-            "name": "Ria",
-            "email": "ria@gymnak.com",
-            "password": "ria123",
-            "favoriteExercises": ["deadlift", "skipping", "shoulder"],
-            "rewards": [
-              { "id": "starter", "name": "Starter Badge", "description": "First workout logged" },
-              { "id": "goal-setter", "name": "Goal Setter", "description": "Reached your weekly score goal" }
-            ],
-            "targetScore": 100,
-            "achievements": []
-          },
-          {
-            "id": "u3",
-            "name": "Mia",
-            "email": "mia@gymnak.com",
-            "password": "mia123",
-            "favoriteExercises": ["bicep", "plank", "jogging"],
-            "rewards": [],
-            "targetScore": 100,
-            "achievements": []
-          },
-          {
-            "id": "u4",
-            "name": "Leo",
-            "email": "leo@gymnak.com",
-            "password": "leo123",
-            "favoriteExercises": ["squat", "deadlift", "skipping"],
-            "rewards": [],
-            "targetScore": 100,
-            "achievements": []
-          }
-        ],
-        "exercises": [
-          { "id": "bench", "name": "Bench Press", "kind": "lift", "unit": "kg" },
-          { "id": "squat", "name": "Squat", "kind": "lift", "unit": "kg" },
-          { "id": "deadlift", "name": "Deadlift", "kind": "lift", "unit": "kg" },
-          { "id": "shoulder", "name": "Shoulder Press", "kind": "lift", "unit": "kg" },
-          { "id": "bicep", "name": "Bicep Curl", "kind": "lift", "unit": "kg" },
-          { "id": "plank", "name": "Plank", "kind": "time", "unit": "sec" },
-          { "id": "skipping", "name": "Skipping", "kind": "time", "unit": "min" },
-          { "id": "jogging", "name": "Jogging", "kind": "time", "unit": "min" },
-          { "id": "w1", "name": "Push Ups", "kind": "lift", "unit": "kg" },
-          { "id": "w2", "name": "Burpees", "kind": "time", "unit": "min" },
-          { "id": "w3", "name": "Pull Ups", "kind": "lift", "unit": "kg" },
-          { "id": "w4", "name": "Mountain Climbers", "kind": "time", "unit": "min" },
-          { "id": "w5", "name": "Dips", "kind": "lift", "unit": "kg" },
-          { "id": "w6", "name": "High Knees", "kind": "time", "unit": "min" },
-          { "id": "w7", "name": "Incline Press", "kind": "lift", "unit": "kg" },
-          { "id": "w8", "name": "Box Jumps", "kind": "time", "unit": "min" },
-          { "id": "w9", "name": "Leg Press", "kind": "lift", "unit": "kg" },
-          { "id": "w10", "name": "Jump Rope", "kind": "time", "unit": "min" },
-          { "id": "w11", "name": "Lunges", "kind": "lift", "unit": "kg" },
-          { "id": "w12", "name": "Rowing", "kind": "time", "unit": "min" },
-          { "id": "w13", "name": "Step Ups", "kind": "lift", "unit": "kg" },
-          { "id": "w14", "name": "Cycling", "kind": "time", "unit": "min" },
-          { "id": "w15", "name": "Calf Raises", "kind": "lift", "unit": "kg" },
-          { "id": "w16", "name": "Elliptical", "kind": "time", "unit": "min" },
-          { "id": "w17", "name": "Romanian Deadlift", "kind": "lift", "unit": "kg" },
-          { "id": "w18", "name": "Battle Ropes", "kind": "time", "unit": "min" },
-          { "id": "w19", "name": "Chest Fly", "kind": "lift", "unit": "kg" },
-          { "id": "w20", "name": "Stair Climber", "kind": "time", "unit": "min" },
-          { "id": "w21", "name": "Hammer Curl", "kind": "lift", "unit": "kg" },
-          { "id": "w22", "name": "Battle Ropes Interval", "kind": "time", "unit": "min" },
-          { "id": "w23", "name": "Tricep Extension", "kind": "lift", "unit": "kg" },
-          { "id": "w24", "name": "Sprints", "kind": "time", "unit": "min" },
-          { "id": "w25", "name": "Glute Bridge", "kind": "lift", "unit": "kg" },
-          { "id": "w26", "name": "Side Plank", "kind": "time", "unit": "sec" },
-          { "id": "w27", "name": "Chest Press Machine", "kind": "lift", "unit": "kg" },
-          { "id": "w28", "name": "Pilates", "kind": "time", "unit": "min" },
-          { "id": "w29", "name": "Cable Row", "kind": "lift", "unit": "kg" },
-          { "id": "w30", "name": "Jumping Jacks", "kind": "time", "unit": "min" },
-          { "id": "w31", "name": "Incline Dumbbell Curl", "kind": "lift", "unit": "kg" },
-          { "id": "w32", "name": "Swimming", "kind": "time", "unit": "min" },
-          { "id": "w33", "name": "Front Squat", "kind": "lift", "unit": "kg" },
-          { "id": "w34", "name": "Zumba", "kind": "time", "unit": "min" },
-          { "id": "w35", "name": "Hip Thrust", "kind": "lift", "unit": "kg" },
-          { "id": "w36", "name": "Core Circuit", "kind": "time", "unit": "min" },
-          { "id": "w37", "name": "Kettlebell Swing", "kind": "lift", "unit": "kg" },
-          { "id": "w38", "name": "Turkish Get-Up", "kind": "time", "unit": "min" },
-          { "id": "w39", "name": "Farmer's Carry", "kind": "lift", "unit": "kg" },
-          { "id": "w40", "name": "Agility Ladder", "kind": "time", "unit": "min" },
-          { "id": "w41", "name": "Good Mornings", "kind": "lift", "unit": "kg" },
-          { "id": "w42", "name": "Battle Rope Slams", "kind": "time", "unit": "min" },
-          { "id": "w43", "name": "Reverse Fly", "kind": "lift", "unit": "kg" },
-          { "id": "w44", "name": "Boxing Pad Work", "kind": "time", "unit": "min" },
-          { "id": "w45", "name": "Lat Pulldown", "kind": "lift", "unit": "kg" },
-          { "id": "w46", "name": "Incline Treadmill", "kind": "time", "unit": "min" },
-          { "id": "w47", "name": "Glute Kickback", "kind": "lift", "unit": "kg" },
-          { "id": "w48", "name": "Core Hold", "kind": "time", "unit": "sec" },
-          { "id": "w49", "name": "Reverse Lunge", "kind": "lift", "unit": "kg" },
-          { "id": "w50", "name": "Shadow Boxing", "kind": "time", "unit": "min" },
-          { "id": "w51", "name": "Decline Bench", "kind": "lift", "unit": "kg" },
-          { "id": "w52", "name": "Power Walk", "kind": "time", "unit": "min" },
-          { "id": "w53", "name": "Cable Crossover", "kind": "lift", "unit": "kg" },
-          { "id": "w54", "name": "Ski Erg", "kind": "time", "unit": "min" },
-          { "id": "w55", "name": "Preacher Curl", "kind": "lift", "unit": "kg" },
-          { "id": "w56", "name": "Tabata", "kind": "time", "unit": "min" },
-          { "id": "w57", "name": "Nordic Hamstring", "kind": "lift", "unit": "kg" },
-          { "id": "w58", "name": "Medicine Ball Slams", "kind": "time", "unit": "min" },
-          { "id": "w59", "name": "Pallof Press", "kind": "lift", "unit": "kg" },
-          { "id": "w60", "name": "Core V-sit", "kind": "time", "unit": "sec" },
-          { "id": "w61", "name": "Cable Kickback", "kind": "lift", "unit": "kg" },
-          { "id": "w62", "name": "Rear Delt Fly", "kind": "time", "unit": "min" },
-          { "id": "w63", "name": "Sumo Deadlift", "kind": "lift", "unit": "kg" },
-          { "id": "w64", "name": "Dynamic Stretching", "kind": "time", "unit": "min" },
-          { "id": "w65", "name": "Split Squat", "kind": "lift", "unit": "kg" },
-          { "id": "w66", "name": "Yoga Flow", "kind": "time", "unit": "min" },
-          { "id": "w67", "name": "Overhead Squat", "kind": "lift", "unit": "kg" },
-          { "id": "w68", "name": "Breath Work", "kind": "time", "unit": "min" },
-          { "id": "w69", "name": "Snatch", "kind": "lift", "unit": "kg" },
-          { "id": "w70", "name": "EMOM Cardio", "kind": "time", "unit": "min" },
-          { "id": "w71", "name": "Clean and Jerk", "kind": "lift", "unit": "kg" },
-          { "id": "w72", "name": "Core Ladder", "kind": "time", "unit": "min" },
-          { "id": "w73", "name": "Weighted Sit-up", "kind": "lift", "unit": "kg" },
-          { "id": "w74", "name": "Isometric Hold", "kind": "time", "unit": "sec" },
-          { "id": "w75", "name": "Sled Push", "kind": "lift", "unit": "kg" },
-          { "id": "w76", "name": "Sprint Intervals", "kind": "time", "unit": "min" },
-          { "id": "w77", "name": "Hill Repeats", "kind": "lift", "unit": "kg" },
-          { "id": "w78", "name": "Lateral Shuffle", "kind": "time", "unit": "min" },
-          { "id": "w79", "name": "Ring Rows", "kind": "lift", "unit": "kg" },
-          { "id": "w80", "name": "Sprint Bike", "kind": "time", "unit": "min" },
-          { "id": "w81", "name": "Single-leg Deadlift", "kind": "lift", "unit": "kg" },
-          { "id": "w82", "name": "Core Tempo", "kind": "time", "unit": "min" },
-          { "id": "w83", "name": "Weighted Step", "kind": "lift", "unit": "kg" },
-          { "id": "w84", "name": "City Run", "kind": "time", "unit": "min" },
-          { "id": "w85", "name": "Band Pull Apart", "kind": "lift", "unit": "kg" },
-          { "id": "w86", "name": "AC Interval", "kind": "time", "unit": "min" },
-          { "id": "w87", "name": "Eccentric Squat", "kind": "lift", "unit": "kg" },
-          { "id": "w88", "name": "Dance Cardio", "kind": "time", "unit": "min" },
-          { "id": "w89", "name": "Weighted Pull", "kind": "lift", "unit": "kg" },
-          { "id": "w90", "name": "Core Burn", "kind": "time", "unit": "min" },
-          { "id": "w91", "name": "Medicine Ball Throw", "kind": "lift", "unit": "kg" },
-          { "id": "w92", "name": "Interval Row", "kind": "time", "unit": "min" },
-          { "id": "w93", "name": "Weighted Calf", "kind": "lift", "unit": "kg" },
-          { "id": "w94", "name": "Tuck Jumps", "kind": "time", "unit": "min" },
-          { "id": "w95", "name": "Reverse Grip Row", "kind": "lift", "unit": "kg" },
-          { "id": "w96", "name": "Plyometric Drill", "kind": "time", "unit": "min" },
-          { "id": "w97", "name": "Weighted Glute Bridge", "kind": "lift", "unit": "kg" },
-          { "id": "w98", "name": "Mobility Flow", "kind": "time", "unit": "min" },
-          { "id": "w99", "name": "Sled Pull", "kind": "lift", "unit": "kg" },
-          { "id": "w100", "name": "Long Distance Run", "kind": "time", "unit": "min" }
-        ],
-        "activities": [
-          {
-            "id": "1780012743037-ldof5s",
-            "userId": "u1",
-            "exerciseId": "bench",
-            "name": "Bench Press",
-            "kind": "lift",
-            "unit": "kg",
-            "weight": 40,
-            "reps": 15,
-            "score": 60,
-            "createdAt": "2026-05-28T23:59:03.037Z"
-          },
-          {
-            "id": "1780012836470-vxfgw1",
-            "userId": "u2",
-            "exerciseId": "deadlift",
-            "name": "Deadlift",
-            "kind": "lift",
-            "unit": "kg",
-            "weight": 50,
-            "reps": 15,
-            "score": 75,
-            "createdAt": "2026-05-29T00:00:36.470Z"
-          },
-          {
-            "id": "1780179648709-kwsff9",
-            "userId": "u2",
-            "exerciseId": "shoulder",
-            "name": "Shoulder Press",
-            "kind": "lift",
-            "unit": "kg",
-            "weight": 57,
-            "reps": 0,
-            "score": 0,
-            "createdAt": "2026-05-30T22:20:48.709Z"
-          },
-          {
-            "id": "1780179660285-iazcad",
-            "userId": "u2",
-            "exerciseId": "shoulder",
-            "name": "Shoulder Press",
-            "kind": "lift",
-            "unit": "kg",
-            "weight": 80,
-            "reps": 35,
-            "score": 280,
-            "createdAt": "2026-05-30T22:21:00.285Z"
-          }
-        ],
-        "friendships": [
-          { "userId": "u1", "friendId": "u2" },
-          { "userId": "u1", "friendId": "u3" },
-          { "userId": "u2", "friendId": "u4" },
-          { "userId": "u1", "friendId": "u4" },
-          { "userId": "u2", "friendId": "u1" },
-          { "userId": "u1", "friendId": "admin" }
-        ]
-      }
+      "id": "u1",
+      "name": "Alex",
+      "email": "alex@gymnak.com",
+      "password": "alex123",
+      "favoriteExercises": [
+        "bench",
+        "squat",
+        "plank"
+      ],
+      "rewards": [],
+      "targetScore": 100,
+      "achievements": []
+    },
+    {
+      "id": "u2",
+      "name": "Ria",
+      "email": "ria@gymnak.com",
+      "password": "ria123",
+      "favoriteExercises": [
+        "deadlift",
+        "skipping",
+        "shoulder"
+      ],
+      "rewards": [],
+      "targetScore": 100,
+      "achievements": []
+    },
+    {
+      "id": "u3",
+      "name": "Mia",
+      "email": "mia@gymnak.com",
+      "password": "mia123",
+      "favoriteExercises": [
+        "bicep",
+        "plank",
+        "jogging"
+      ],
+      "rewards": [],
+      "targetScore": 100,
+      "achievements": []
+    },
+    {
+      "id": "u4",
+      "name": "Leo",
+      "email": "leo@gymnak.com",
+      "password": "leo123",
+      "favoriteExercises": [
+        "squat",
+        "deadlift",
+        "skipping"
+      ],
+      "rewards": [],
+      "targetScore": 100,
+      "achievements": []
+    }
+  ],
+  "exercises": [
+    {
+      "id": "bench",
+      "name": "Bench Press",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "squat",
+      "name": "Squat",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "deadlift",
+      "name": "Deadlift",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "shoulder",
+      "name": "Shoulder Press",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "bicep",
+      "name": "Bicep Curl",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "plank",
+      "name": "Plank",
+      "kind": "time",
+      "unit": "sec"
+    },
+    {
+      "id": "skipping",
+      "name": "Skipping",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "jogging",
+      "name": "Jogging",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w1",
+      "name": "Push Ups",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w2",
+      "name": "Burpees",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w3",
+      "name": "Pull Ups",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w4",
+      "name": "Mountain Climbers",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w5",
+      "name": "Dips",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w6",
+      "name": "High Knees",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w7",
+      "name": "Incline Press",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w8",
+      "name": "Box Jumps",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w9",
+      "name": "Leg Press",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w10",
+      "name": "Jump Rope",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w11",
+      "name": "Lunges",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w12",
+      "name": "Rowing",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w13",
+      "name": "Step Ups",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w14",
+      "name": "Cycling",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w15",
+      "name": "Calf Raises",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w16",
+      "name": "Elliptical",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w17",
+      "name": "Romanian Deadlift",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w18",
+      "name": "Battle Ropes",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w19",
+      "name": "Chest Fly",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w20",
+      "name": "Stair Climber",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w21",
+      "name": "Hammer Curl",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w22",
+      "name": "Battle Ropes Interval",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w23",
+      "name": "Tricep Extension",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w24",
+      "name": "Sprints",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w25",
+      "name": "Glute Bridge",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w26",
+      "name": "Side Plank",
+      "kind": "time",
+      "unit": "sec"
+    },
+    {
+      "id": "w27",
+      "name": "Chest Press Machine",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w28",
+      "name": "Pilates",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w29",
+      "name": "Cable Row",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w30",
+      "name": "Jumping Jacks",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w31",
+      "name": "Incline Dumbbell Curl",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w32",
+      "name": "Swimming",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w33",
+      "name": "Front Squat",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w34",
+      "name": "Zumba",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w35",
+      "name": "Hip Thrust",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w36",
+      "name": "Core Circuit",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w37",
+      "name": "Kettlebell Swing",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w38",
+      "name": "Turkish Get-Up",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w39",
+      "name": "Farmer's Carry",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w40",
+      "name": "Agility Ladder",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w41",
+      "name": "Good Mornings",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w42",
+      "name": "Battle Rope Slams",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w43",
+      "name": "Reverse Fly",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w44",
+      "name": "Boxing Pad Work",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w45",
+      "name": "Lat Pulldown",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w46",
+      "name": "Incline Treadmill",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w47",
+      "name": "Glute Kickback",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w48",
+      "name": "Core Hold",
+      "kind": "time",
+      "unit": "sec"
+    },
+    {
+      "id": "w49",
+      "name": "Reverse Lunge",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w50",
+      "name": "Shadow Boxing",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w51",
+      "name": "Decline Bench",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w52",
+      "name": "Power Walk",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w53",
+      "name": "Cable Crossover",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w54",
+      "name": "Ski Erg",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w55",
+      "name": "Preacher Curl",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w56",
+      "name": "Tabata",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w57",
+      "name": "Nordic Hamstring",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w58",
+      "name": "Medicine Ball Slams",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w59",
+      "name": "Pallof Press",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w60",
+      "name": "Core V-sit",
+      "kind": "time",
+      "unit": "sec"
+    },
+    {
+      "id": "w61",
+      "name": "Cable Kickback",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w62",
+      "name": "Rear Delt Fly",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w63",
+      "name": "Sumo Deadlift",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w64",
+      "name": "Dynamic Stretching",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w65",
+      "name": "Split Squat",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w66",
+      "name": "Yoga Flow",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w67",
+      "name": "Overhead Squat",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w68",
+      "name": "Breath Work",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w69",
+      "name": "Snatch",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w70",
+      "name": "EMOM Cardio",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w71",
+      "name": "Clean and Jerk",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w72",
+      "name": "Core Ladder",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w73",
+      "name": "Weighted Sit-up",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w74",
+      "name": "Isometric Hold",
+      "kind": "time",
+      "unit": "sec"
+    },
+    {
+      "id": "w75",
+      "name": "Sled Push",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w76",
+      "name": "Sprint Intervals",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w77",
+      "name": "Hill Repeats",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w78",
+      "name": "Lateral Shuffle",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w79",
+      "name": "Ring Rows",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w80",
+      "name": "Sprint Bike",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w81",
+      "name": "Single-leg Deadlift",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w82",
+      "name": "Core Tempo",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w83",
+      "name": "Weighted Step",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w84",
+      "name": "City Run",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w85",
+      "name": "Band Pull Apart",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w86",
+      "name": "AC Interval",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w87",
+      "name": "Eccentric Squat",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w88",
+      "name": "Dance Cardio",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w89",
+      "name": "Weighted Pull",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w90",
+      "name": "Core Burn",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w91",
+      "name": "Medicine Ball Throw",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w92",
+      "name": "Interval Row",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w93",
+      "name": "Weighted Calf",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w94",
+      "name": "Tuck Jumps",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w95",
+      "name": "Reverse Grip Row",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w96",
+      "name": "Plyometric Drill",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w97",
+      "name": "Weighted Glute Bridge",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w98",
+      "name": "Mobility Flow",
+      "kind": "time",
+      "unit": "min"
+    },
+    {
+      "id": "w99",
+      "name": "Sled Pull",
+      "kind": "lift",
+      "unit": "kg"
+    },
+    {
+      "id": "w100",
+      "name": "Long Distance Run",
+      "kind": "time",
+      "unit": "min"
+    }
+  ],
+  "activities": [
+    {
+      "id": "1780012743037-ldof5s",
+      "userId": "u1",
+      "exerciseId": "bench",
+      "name": "Bench Press",
+      "kind": "lift",
+      "unit": "kg",
+      "weight": 40,
+      "reps": 15,
+      "score": 60,
+      "createdAt": "2026-05-28T23:59:03.037Z"
+    },
+    {
+      "id": "1780012836470-vxfgw1",
+      "userId": "u2",
+      "exerciseId": "deadlift",
+      "name": "Deadlift",
+      "kind": "lift",
+      "unit": "kg",
+      "weight": 50,
+      "reps": 15,
+      "score": 75,
+      "createdAt": "2026-05-29T00:00:36.470Z"
+    },
+    {
+      "id": "1780179648709-kwsff9",
+      "userId": "u2",
+      "exerciseId": "shoulder",
+      "name": "Shoulder Press",
+      "kind": "lift",
+      "unit": "kg",
+      "weight": 57,
+      "reps": 0,
+      "score": 0,
+      "createdAt": "2026-05-30T22:20:48.709Z"
+    },
+    {
+      "id": "1780179660285-iazcad",
+      "userId": "u2",
+      "exerciseId": "shoulder",
+      "name": "Shoulder Press",
+      "kind": "lift",
+      "unit": "kg",
+      "weight": 80,
+      "reps": 35,
+      "score": 280,
+      "createdAt": "2026-05-30T22:21:00.285Z"
+    }
+  ],
+  "friendships": [
+    {
+      "userId": "u1",
+      "friendId": "u2"
+    },
+    {
+      "userId": "u1",
+      "friendId": "u3"
+    },
+    {
+      "userId": "u2",
+      "friendId": "u4"
+    },
+    {
+      "userId": "u1",
+      "friendId": "u4"
+    },
+    {
+      "userId": "u2",
+      "friendId": "u1"
+    },
+    {
+      "userId": "u1",
+      "friendId": "admin"
+    }
+  ],
+  "rewards": []
+}

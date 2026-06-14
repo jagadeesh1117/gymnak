@@ -213,7 +213,11 @@ function formatLeaderboardItem(user, entries, bonusPoints = 0) {
 
 async function loadDatabase() {
   await db.read();
-  db.data ||= { users: defaultUsers, exercises: defaultExercises, activities: [], friendships: defaultFriends };
+  db.data ||= {};
+  db.data.users ||= defaultUsers;
+  db.data.exercises ||= defaultExercises;
+  db.data.activities ||= [];
+  db.data.friendships ||= defaultFriends;
   await db.write();
 }
 
